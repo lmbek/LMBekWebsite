@@ -7,20 +7,197 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #474747;
+    color: white;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5781A5;
+}
+
+header h1 {
+    padding: 5px 30px;
+}
+
+#burger-icon {
+    /* display: block; */
+    width: 45px;
+    height: 45px;
+    background-color: pink;
+    display: none;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+header nav {
+    background-color: white;
+    border-radius: 12px;
+    margin: 20px 30px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li {
+
+}
+
+header nav a {
+    display: block;
+    padding: 10px 30px;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    background-color: #e5900f;
+}
+
+header nav li:first-child a:hover {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+header nav li:last-child a:hover {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* if put before the nav a:hover, then we overwrite the hover */
+/* if we want the other effect, we put it after (like now) */
+header nav li.selected a {
+    background-color: #ffcd20;
+}
+
+header nav li.selected:first-child a {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+header nav li.selected:last-child a {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+}
+
+footer #contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 450px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+footer #contact-form input {
+    min-height: 35px;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 8px;
+    border: 4px solid #5781A5;
+    border-radius: 12px;
+    background-color: #424242;
+    outline: 2px solid transparent;
+    color: #DDDDDD;
+}
+
+footer #contact-form textarea {
+    font-family: Arial, serif;
+    min-height: 150px;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 8px;
+    border: 4px solid #5781A5;
+    border-radius: 12px;
+    background-color: #424242;
+    outline: 2px solid transparent;
+    color: #DDDDDD;
+}
+
+footer #contact-form button {
+    min-height: 35px;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #5781A5;
+    color: #DDDDDD;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: 2px solid transparent;
+}
+
+footer #contact-form input:hover,
+footer #contact-form textarea:hover {
+    border: 4px solid white;
+    outline: none;
+    color: white;
+}
+
+footer #contact-form button:hover {
+    border: 4px solid white;
+    outline: none;
+    color: white;
 }
 
 
-
-
-
-
 /* LMBEK */
+.lmbek {
 
+}
 
 /* Projects */
+.projects {
 
-
+}
 
 /* Experience */
+.experience {
+
+}
 
 /* Education */
+.education {
+
+}
+
+.education main {
+
+}
+
+.education article h2 {
+    padding: 30px 20px;
+}
+
+.education article p {
+    padding: 10px 20px;
+}
+
+.education table {
+    background: pink;
+    color: black;
+    margin: 0 auto;
+}
