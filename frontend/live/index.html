@@ -13,18 +13,18 @@
     <link rel="icon" href="data:;base64,=">
     <link href="css/default.css" rel="stylesheet">
 </head>
-<body>
+<body class="lmbek">
 <noscript>Warning: JavaScript is not enabled</noscript>
 <header>
     <h1>LMBEK</h1>
-    <label id="burger-icon"></label>
-    <input id="burger-checkbox">
+    <label id="burger-icon" for="burger-checkbox" ></label>
+    <input id="burger-checkbox" type="checkbox">
     <nav>
         <ul>
-            <li><a href="">LMBEK</a></li>
-            <li><a href="../live/projekter">Projekter</a></li>
-            <li><a href="../live/erfaring">Erfaring</a></li>
-            <li><a href="../live/uddannelse">Projekter</a></li>
+            <li class="selected"><a href="">LMBEK</a></li>
+            <li><a href="projekter">Projekter</a></li>
+            <li><a href="erfaring">Erfaring</a></li>
+            <li><a href="uddannelse">Uddannelse</a></li>
         </ul>
     </nav>
 </header>
@@ -57,7 +57,7 @@
     </aside>
 </main>
 <footer>
-    <form>
+    <form id="contact-form">
         <h2>Kontakt</h2>
         <label for="name">Navn</label>
         <input id="name" type="text">
