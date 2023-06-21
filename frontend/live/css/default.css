@@ -1,0 +1,484 @@
+:root {
+    --black: black;
+    --white: white;
+    --color1: #5D5ED9;
+    --color2: #393942;
+    --color3: #5781A5;
+    --color4: #B19D8A;
+    --color5: #D9875D;
+}
+
+/* Default */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color2);
+    color: white;
+    font-size: 24px;
+    min-width: 350px;
+}
+
+a {
+    color: initial;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color3);
+}
+
+header h1 {
+    padding: 5px 30px;
+}
+
+#burger-icon {
+    /* display: block; */
+    width: 45px;
+    height: 45px;
+    background-color: pink;
+    display: none;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+header nav {
+    background-color: white;
+    border-radius: 12px;
+    margin: 20px 30px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav li {
+
+}
+
+header nav a {
+    display: block;
+    padding: 10px 30px;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: none;
+    background-color: var(--color5);
+}
+
+header nav li:first-child a:hover {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+header nav li:last-child a:hover {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* if put before the nav a:hover, then we overwrite the hover */
+/* if we want the other effect, we put it after (like now) */
+header nav li.selected a {
+    background-color: var(--color4);
+}
+
+header nav li.selected:first-child a {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+header nav li.selected:last-child a {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #303030;
+    text-align: center;
+}
+
+footer #contact-form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer #contact-form h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer #contact-form input {
+    min-height: 35px;
+    margin: 15px 0;
+    font-size: 1rem;
+    padding: 8px;
+    border: 4px solid #5781A5;
+    border-radius: 12px;
+    background-color: #424242;
+    outline: 2px solid transparent; /* TODO: set to none */
+    color: #DDDDDD;
+}
+
+footer #contact-form textarea {
+    font-family: Arial, serif;
+    min-height: 250px;
+    margin: 15px 0;
+    font-size: 1rem;
+    padding: 8px;
+    border: 4px solid #5781A5;
+    border-radius: 12px;
+    background-color: #424242;
+    outline: 2px solid transparent;
+    color: #DDDDDD;
+}
+
+footer #contact-form button {
+    min-height: 35px;
+    margin: 15px 0;
+    padding: 8px;
+    cursor: pointer;
+    background-color: #5781A5;
+    color: #DDDDDD;
+    border: 4px solid transparent;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: 2px solid transparent;
+}
+
+footer #contact-form input:hover,
+footer #contact-form textarea:hover {
+    border: 4px solid white;
+    outline: none;
+    color: white;
+}
+
+footer #contact-form button:hover {
+    border: 4px solid white;
+    outline: none;
+    color: white;
+}
+
+footer p:last-child {
+    margin: 25px;
+}
+
+
+/* LMBEK */
+.lmbek {
+
+}
+
+/* Projects */
+
+.projects main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.projects main > h2 {
+    padding: 30px 20px;
+}
+
+.projects main > p {
+    padding: 10px 20px;
+}
+
+.projects main nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
+    max-width: 1380px; /* 30px on top of 900px bc of gap */
+    color: black;
+    gap: 20px;
+    margin: 35px 0;
+}
+
+.projects main h3 {
+    color: white;
+    padding: 20px
+}
+
+
+.projects main nav section {
+    display: grid;
+}
+
+.projects main nav > section {
+    background: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    height: 320px;
+}
+
+.projects main nav img {
+    max-width: 100%;
+    width: 100px;
+    margin: 5px;
+    float: right;
+}
+
+.projects main nav h2 {
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.projects main nav p {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+}
+
+.projects main nav .buttons {
+    align-self: end;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+}
+
+.projects main nav a {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* Experience */
+.experience {
+
+}
+
+.experience main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Education */
+.education {
+
+}
+
+.education main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.education article h2 {
+    padding: 30px 20px;
+}
+
+.education article p {
+    padding: 10px 20px;
+}
+
+.education .history {
+    margin: 15px;
+}
+
+.education .history .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 20px 0 20px;
+}
+
+.education .history .head > * {
+    width: 280px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #B19D8A;
+}
+
+.education .history .head > *:nth-child(2) {
+    background-color: white;
+}
+
+.education .history .data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.education .history .data > * {
+    flex: 1;
+}
+
+.education .history .data > *:first-child {
+    text-align: right;
+    font-size: 1rem;
+}
+
+.education .history .data > *:nth-child(2) {
+    flex: 0;
+    margin: 0 20px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.education .history .data > *:nth-child(2) div {
+    width: 30px;
+    height: 10px;
+}
+
+.education .history .data > *:nth-child(2) div.relation {
+    background-color: #B19D8A;
+}
+
+.education .history .data > *:nth-child(2) div.year {
+    width: 100px;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: #D9875D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color2)
+}
+
+.education .history .data > *:last-child {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.education .empty {
+    width: 15px;
+    height: 20px;
+    background-color: #B19D8A;
+    margin: 0 auto;
+}
+
+/* Tablet */
+@media screen and (max-width: 1100px){
+    header {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin: 15px auto;
+        width: calc(100% - 30px);
+        max-width: 400px;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        border-radius: unset;
+    }
+
+    header nav li.selected:first-child a {
+        border-radius: 12px;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+
+    header nav li:first-child a:hover {
+        border-radius: 12px;
+        border-bottom-right-radius: unset;
+        border-bottom-left-radius: unset;
+    }
+
+    header nav li.selected:last-child a {
+        border-radius: 12px;
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+    }
+
+    header nav li:last-child a:hover {
+        border-radius: 12px;
+        border-top-right-radius: unset;
+        border-top-left-radius: unset;
+    }
+
+    .education article h2 {
+        font-size: 1.25rem;
+    }
+
+    .education article p {
+        font-size: 1rem;
+    }
+
+    .education .history {
+
+    }
+
+    .education .history .head {
+        font-size: 0.8rem;
+    }
+
+    .education .history .data {
+        height: 40px;
+    }
+
+    .education .history .data > *:nth-child(2) {
+        height: 40px;
+    }
+
+    .education .history .data > *:nth-child(2) div.year {
+        font-size: 0.8rem;
+        width: 80px;
+    }
+
+    .education .history .data > *:first-child {
+        font-size: 0.8rem;
+    }
+
+    .education .history .data > *:last-child {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .education .history .head {
+        font-size: 0.6rem;
+    }
+
+    .education .history .data {
+        font-size: 0.6rem;
+    }
+
+    .education .history .data {
+        height: 40px;
+    }
+
+    .education .history .data > *:nth-child(2) {
+        height: 40px;
+        width: 80px;
+    }
+
+    .education .history .data > *:first-child {
+        font-size: 0.6rem;
+    }
+
+    .education .history .data > *:last-child {
+        font-size: 0.6rem;
+    }
+}
