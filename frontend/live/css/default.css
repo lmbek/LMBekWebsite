@@ -190,6 +190,30 @@ footer p:last-child {
 
 }
 
+.lmbek main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lmbek section h2 {
+    padding: 20px;
+}
+
+.lmbek section p {
+    padding: 10px 20px;
+}
+
+.lmbek section img {
+    padding: 10px 20px;
+}
+
+.lmbek section h3,
+.lmbek section h4,
+.lmbek section h5
+{
+    padding: 10px 20px;
+}
+
 /* Projects */
 
 .projects main {
