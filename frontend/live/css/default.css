@@ -21,6 +21,9 @@ body {
     color: white;
     font-size: 24px;
     min-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(calc(100vh - 88px), auto) auto;
 }
 
 a {
@@ -188,6 +191,30 @@ footer p:last-child {
 /* LMBEK */
 .lmbek {
 
+}
+
+.lmbek main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lmbek section h2 {
+    padding: 20px;
+}
+
+.lmbek section p {
+    padding: 10px 20px;
+}
+
+.lmbek section img {
+    padding: 10px 20px;
+}
+
+.lmbek section h3,
+.lmbek section h4,
+.lmbek section h5
+{
+    padding: 10px 20px;
 }
 
 /* Projects */
