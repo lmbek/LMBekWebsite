@@ -21,6 +21,9 @@ body {
     color: white;
     font-size: 24px;
     min-width: 350px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto minmax(calc(100vh - 88px), auto) auto;
 }
 
 a {
